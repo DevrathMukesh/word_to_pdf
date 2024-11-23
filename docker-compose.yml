@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  backend:
+    build:
+      context: ./backend   # Ensure this path points to the backend folder
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - frontend
+
+  frontend:
+    build:
+      context: ./frontend/frontend
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend/frontend:/app
+

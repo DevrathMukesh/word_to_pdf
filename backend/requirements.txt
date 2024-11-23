@@ -1,0 +1,15 @@
+# Streamlit - for the frontend UI
+streamlit
+
+# Flask - for the backend API
+Flask
+Flask-Cors
+
+# Libraries for processing .docx and generating PDFs
+python-docx
+reportlab
+
+# Werkzeug and related libraries (required for Flask)
+werkzeug
+markupsafe
+Jinja2
